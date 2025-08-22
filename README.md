@@ -269,8 +269,8 @@ If you use this code in your research, please cite:
   howpublished={\url{https://github.com/your-username/claude-like-model}}
 
 }
-
+```
 ## support
 
-```Email us
-aiimageclassifierteam@gmail.com
+# Email us
+- aiimageclassifierteam@gmail.com

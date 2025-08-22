@@ -1,0 +1,32 @@
+model:
+  vocab_size: 50257
+  d_model: 768
+  n_heads: 12
+  n_layers: 12
+  d_ff: 3072
+  max_seq_len: 2048
+  dropout: 0.1
+  
+training:
+  batch_size: 32
+  learning_rate: 5e-4
+  weight_decay: 0.01
+  warmup_steps: 4000
+  max_steps: 100000
+  save_steps: 1000
+  eval_steps: 500
+  gradient_accumulation_steps: 1
+  
+data:
+  train_file: "data/train.jsonl"
+  eval_file: "data/eval.jsonl"
+  max_length: 1024
+  
+tokenizer:
+  vocab_file: "tokenizer/vocab.json"
+  merges_file: "tokenizer/merges.txt"
+  
+logging:
+  wandb_project: "claude-like-model"
+  log_level: "INFO"
+  output_dir: "outputs"
